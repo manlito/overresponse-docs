@@ -1,12 +1,12 @@
-## Welcome
 
-Welcome to your new Telegram site.  Check out the [Getting Started](/getting_started) page
-for information on how to set up your site.
-
-<span data-lift="if?extra_true=has_blog">Welcome to my blog.  Here are my most recent blog posts:</span>
-
-<div data-lift="if?extra_true=has_blog">
-      <div data-lift="blog.simple"></div>
+<div class="container">
+	<div class="jumbotron">
+			<h1>OverReponse DOCS</h1>
+			<p class="lead">
+				Want to know how to implement OverResponse in your site? This is 
+				the place to get started.
+			</p>
+	</div>
 </div>
 
-[title: Home]: /
+[title: Overresponse Documentation]: /
