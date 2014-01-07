@@ -1,6 +1,5 @@
 
-Basic Example
-------------
+# Basic Example
 
 This example shows the most basic implementation available, that is,
 by copying the code provided using the publish button:
@@ -15,3 +14,5 @@ y.getElementsByTagName('head')[0].appendChild(v);})('ORSettings', 'ORClientConta
 </script>
 
 </div>
+
+[title: Basic]: /
