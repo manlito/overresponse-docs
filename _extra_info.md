@@ -1,6 +1,7 @@
 ---
 blog_root: /blog_posts
-site_title: My Blog
+site_title: OverResponse Docs
+template_url: https://github.com/manlito/overresponse-blog-template.git
 
 ---
 
