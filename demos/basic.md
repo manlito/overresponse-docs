@@ -1,5 +1,3 @@
-title: Basic
-
 
 Basic Example
 ------------
