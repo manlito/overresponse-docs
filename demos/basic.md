@@ -1,5 +1,5 @@
 title: Basic
-order: 0
+menu-locgroup: hidden
 
 Basic Example
 ------------
