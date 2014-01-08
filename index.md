@@ -11,6 +11,9 @@
 
 [title: Overresponse Documentation]: /
 
+<div class="alert alert-danger">
+	<strong>Be carefull!</strong> This documentation may change until we leave the beta phase. See more at: <a href="http://blog.overresponse.com/about">http://blog.overresponse.com/about</a>.
+</div>
 
 # Survey Configuration
 
@@ -43,10 +46,21 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			containerId
 		</td>
 		<td>	
-			The ID of the `div` element where the survey will be inserted 
+			The ID of the <code>div</code> element where the survey will be inserted 
 		</td>
 		<td>
 			Code provided in Publish page on the survey editor will create this container where the code is placed.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			height
+		</td>
+		<td>	
+			A string with desired height for the survey 
+		</td>
+		<td>
+			This number is important when used in conjuction with **expandable** option, since the size of the container is established after the user clicks the first question. In other cases, you may set a height directly to the provided container, using your favorite mathod.
 		</td>
 	</tr>
 </table>
