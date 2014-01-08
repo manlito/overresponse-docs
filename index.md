@@ -1,19 +1,13 @@
 
-<div class="container">
-	<div class="jumbotron">
-			<h1>OverReponse DOCS</h1>
-			<p class="lead">
-				Want to know how to implement OverResponse in your site? This is 
-				the place to get started.
-			</p>
-	</div>
+<div class="jumbotron">
+	<h1>OverReponse DOCS</h1>
+	<p class="lead">
+		Want to know how to implement OverResponse in your site? This is 
+		the place to get started.
+	</p>
 </div>
 
 [title: Overresponse Documentation]: /
-
-<div class="alert alert-danger">
-	<strong>Be carefull!</strong> This documentation may change until we leave the beta phase. See more at: <a href="http://blog.overresponse.com/about">http://blog.overresponse.com/about</a>.
-</div>
 
 # Survey Configuration
 
