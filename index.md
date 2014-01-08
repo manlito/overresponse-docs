@@ -16,9 +16,24 @@
 
 By default, OverResponse requires a global variable called `ORSettings` with following attributes:
 
-Attribute | Possible Values
---------- | ---------------
-surveyId (required) | Unique survey ID 
+<table class="table table-striped">
+	<tr>
+		<th>
+			Attribute
+		</th>
+		<th>
+			Possible Values
+		</th>
+	</tr>
+	<tr>
+		<td>
+			surveyId (required)
+		</td>
+		<td>	
+		Unique survey ID 
+		</td>
+	</tr>
+</table>
 
 # Events
 
