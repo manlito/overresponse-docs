@@ -24,6 +24,9 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 		<th>
 			Possible Values
 		</th>
+		<th>
+			Notes
+		</th>
 	</tr>
 	<tr>
 		<td>
@@ -31,6 +34,19 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 		</td>
 		<td>	
 		Unique survey ID 
+		</td>
+		<td>	
+		</td>
+	</tr>
+	<tr>
+		<td>
+			containerId
+		</td>
+		<td>	
+			The ID of the `div` element where the survey will be inserted 
+		</td>
+		<td>
+			Code provided in Publish page on the survey editor will create this container where the code is placed.
 		</td>
 	</tr>
 </table>
