@@ -54,9 +54,32 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			A string with desired height for the survey 
 		</td>
 		<td>
-			This number is important when used in conjuction with **expandable** option, since the size of the container is established after the user clicks the first question. In other cases, you may set a height directly to the provided container, using your favorite mathod.
+			This number is important when used in conjuction with <strong>expandable</strong> option, since the size of the container is established after the user clicks the first question. In other cases, you may set a height directly to the provided container, using your favorite method.
 		</td>
 	</tr>
+	<tr>
+		<td>
+			alwaysShow
+		</td>
+		<td>	
+			A boolean value 
+		</td>
+		<td>
+			By default, if users starts filling a survey, they will not be able to see the same survey again (unless cookies are cleared). Use this flag to force the display of a survey.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			minimalSize
+		</td>
+		<td>	
+			A boolean value 
+		</td>
+		<td>
+			When true, the survey will set its size to the minimum size, determined by the item with the item with the biggest height.
+		</td>
+	</tr>
+
 </table>
 
 # Events
