@@ -48,6 +48,17 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 	</tr>
 	<tr>
 		<td>
+			minimalSize
+		</td>
+		<td>	
+			<code>true</code> or <code>false</code>
+		</td>
+		<td>
+			When true, the survey will set its size to the minimum size, determined by the item with the item with the biggest height.
+		</td>
+	</tr>
+	<tr>
+		<td>
 			height
 		</td>
 		<td>	
@@ -62,21 +73,10 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			alwaysShow
 		</td>
 		<td>	
-			A boolean value 
+			<code>true</code> or <code>false</code>
 		</td>
 		<td>
 			By default, if users starts filling a survey, they will not be able to see the same survey again (unless cookies are cleared). Use this flag to force the display of a survey.
-		</td>
-	</tr>
-	<tr>
-		<td>
-			minimalSize
-		</td>
-		<td>	
-			A boolean value 
-		</td>
-		<td>
-			When true, the survey will set its size to the minimum size, determined by the item with the item with the biggest height.
 		</td>
 	</tr>
 
