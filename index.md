@@ -41,7 +41,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 	</tr>
 	<tr>
 		<td>
-			containerId
+			containerId (required)
 		</td>
 		<td>	
 			The ID of the <code>div</code> element where the survey will be inserted 
@@ -146,7 +146,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			Object
 		</td>
 		<td>
-			Object composed of user templates. Each template only has one element. For instance, OverResponse default templates are defined as:
+			Object composed of user templates. Each template only has one element. For instance, an object with a single template would be defined as:
 			
 			<pre><code>
 {
@@ -175,6 +175,30 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			If provided, this class will be added to all form controls that are system controls (only textboxes and textareas at the moment). Please note that checkboxes and radio elements are rendered using images.
 		</td>
 	</tr>
+	<tr>
+		<td>
+			events
+		</td>
+		<td>	
+			Object
+		</td>
+		<td>
+			Each element must be named as the corresponding handler. For instance, the following code displays an alert box when the user answers the first question a survey:
+			
+			<pre><code>
+var ORSettings = {
+  ... some other settings ...
+  events: {
+    onFirstItemChange: afterUserClickFirstItem
+  }
+};
+
+function afterUserClickFirstItem(event) {
+  alert('Hello world');
+}
+			</code></pre>
+		</td>
+	</tr>
 </table>
 
 # Events
@@ -186,4 +210,28 @@ OverResponse provides facility to handle almost all events related to the survey
 - Integrate with your favorite JS Framework
 - Handle special events (such as bounces)
 
+Event handlers are also assigned using the  `ORSettings` object. 
 
+<table class="table table-striped">
+	<tr>
+		<th>
+			Event
+		</th>
+		<th>
+			Fired at
+		</th>
+		<th>
+			Notes
+		</th>
+	</tr>
+	<tr>
+		<td>
+			surveyId (required)
+		</td>
+		<td>	
+		Unique survey ID 
+		</td>
+		<td>	
+		</td>
+	</tr>
+</table>
