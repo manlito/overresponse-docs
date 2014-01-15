@@ -155,8 +155,8 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
     + &#39;&lt;div class=&quot;ORSlimContainer&quot;&gt;&#39;
     + &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
     + &#39;	&lt;div class=&quot;ORLayoutButtons&quot;&gt;&#39;
-    + &#39;  &lt;div class=&quot;ORLayoutLeft Rounded5px NonSelectable&quot;&gt;&amp;lsaquo;&lt;/div&gt;&#39;
-    + &#39;  &lt;div class=&quot;ORLayoutRight Rounded5px NonSelectable&quot;&gt;&amp;raquo;&lt;/div&gt;&#39;
+    + &#39;  &lt;div class=&quot;ORLayoutLeft&quot;&gt;&amp;lsaquo;&lt;/div&gt;&#39;
+    + &#39;  &lt;div class=&quot;ORLayoutRight&quot;&gt;&amp;raquo;&lt;/div&gt;&#39;
     + &#39;	&lt;/div&gt;&#39;
     + &#39;&lt;/div&gt;&#39;
   }
@@ -183,7 +183,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			Object
 		</td>
 		<td>
-			Each element must be named as the corresponding handler. For instance, the following code displays an alert box when the user answers the first question a survey:
+			Each element must be named as the corresponding handler. For instance, the following code displays an alert box when the user answers the first question of a survey:
 			
 			<pre><code>
 var ORSettings = {
@@ -197,6 +197,8 @@ function afterUserClickFirstItem(event) {
   alert('Hello world');
 }
 			</code></pre>
+			
+			Please read more on events bellow.
 		</td>
 	</tr>
 </table>
@@ -218,7 +220,7 @@ Event handlers are also assigned using the  `ORSettings` object.
 			Event
 		</th>
 		<th>
-			Fired at
+			Fired when
 		</th>
 		<th>
 			Notes
@@ -226,12 +228,73 @@ Event handlers are also assigned using the  `ORSettings` object.
 	</tr>
 	<tr>
 		<td>
-			surveyId (required)
+			onFirstItemChange
 		</td>
 		<td>	
-		Unique survey ID 
+			User submits it first response 
+		</td>
+		<td>
+			The event is fired even if the item is not the first item in the survey (for instance, when user skips questions).
+		</td>
+	</tr>
+	<tr>
+		<td>
+			onItemChange
 		</td>
 		<td>	
+			User submits or changes a response 
+		</td>
+		<td>
+			The event is fires always the user submits a new response, or if a new value is sumitted.
+		</td>
+	</tr>
+</table>
+
+All event handlers receive an object with the event data. This object contains the following objects:
+
+<table class="table table-striped">
+	<tr>
+		<th>
+			Element
+		</th>
+		<th>
+			Type
+		</th>
+		<th>
+			Notes
+		</th>
+	</tr>
+	<tr>
+		<td>
+			survey.reject
+		</td>
+		<td>	
+			Function
+		</td>
+		<td>
+			Call this method to hide the survey, and register it as a bounce.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			survey.container
+		</td>
+		<td>	
+			jQuery element
+		</td>
+		<td>
+			The main container for the survey.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			response.value
+		</td>
+		<td>	
+			String
+		</td>
+		<td>
+			The new string value for the related item.
 		</td>
 	</tr>
 </table>
