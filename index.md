@@ -148,35 +148,35 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 		<td>
 			Object composed of user templates. Each template only has one element. For instance, OverResponse default templates are defined as:
 			
-			<pre>
+			<code>
 			{
-				Simple: {
-					html: ''
-						+ '<div class="ORSimpleContainer">'
-						+ '	<div class="ORLayoutLeft Rounded5px NonSelectable">&lsaquo;</div>'
-						+ '	<div class="ORLayoutCenter"></div>'
-						+ '	<div class="ORLayoutRight Rounded5px NonSelectable">&raquo;</div>'
-						+ '</div>'
-				},
-				ButtonLess: {
-					html: ''
-						+ '<div class="ORButtonLessContainer">'
-						+ '	<div class="ORLayoutCenter"></div>'
-						+ '</div>'
-				},
-				Slim: {
-					html: ''
-						+ '<div class="ORSlimContainer">'
-						+ '	<div class="ORLayoutCenter"></div>'
-						+ '	<div class="ORLayoutButtons">'
-						+ '  <div class="ORLayoutLeft Rounded5px NonSelectable">&lsaquo;</div>'
-						+ '  <div class="ORLayoutRight Rounded5px NonSelectable">&raquo;</div>'
-						+ '	</div>'
-						+ '</div>'
-				}
-			}
+		Simple: {
+			html: &#39;&#39;
+				+ &#39;&lt;div class=&quot;ORSimpleContainer&quot;&gt;&#39;
+				+ &#39;	&lt;div class=&quot;ORLayoutLeft Rounded5px NonSelectable&quot;&gt;&amp;lsaquo;&lt;/div&gt;&#39;
+				+ &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
+				+ &#39;	&lt;div class=&quot;ORLayoutRight Rounded5px NonSelectable&quot;&gt;&amp;raquo;&lt;/div&gt;&#39;
+				+ &#39;&lt;/div&gt;&#39;
+		},
+		ButtonLess: {
+			html: &#39;&#39;
+				+ &#39;&lt;div class=&quot;ORButtonLessContainer&quot;&gt;&#39;
+				+ &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
+				+ &#39;&lt;/div&gt;&#39;
+		},
+		Slim: {
+			html: &#39;&#39;
+				+ &#39;&lt;div class=&quot;ORSlimContainer&quot;&gt;&#39;
+				+ &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
+				+ &#39;	&lt;div class=&quot;ORLayoutButtons&quot;&gt;&#39;
+				+ &#39;  &lt;div class=&quot;ORLayoutLeft Rounded5px NonSelectable&quot;&gt;&amp;lsaquo;&lt;/div&gt;&#39;
+				+ &#39;  &lt;div class=&quot;ORLayoutRight Rounded5px NonSelectable&quot;&gt;&amp;raquo;&lt;/div&gt;&#39;
+				+ &#39;	&lt;/div&gt;&#39;
+				+ &#39;&lt;/div&gt;&#39;
+		}
+	}
 			
-			</pre>
+			</code>
 		</td>
 	</tr>
 	<tr>
