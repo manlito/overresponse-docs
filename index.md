@@ -99,7 +99,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			showDelay
 		</td>
 		<td>	
-			Number of milliseconds
+			<code>Int</code> (milliseconds)
 		</td>
 		<td>
 			If desired, a fixed delay for the survey can be specified. This delay starts after the respondant.js file has been loaded.
@@ -124,7 +124,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			<code>true</code> or <code>false</code>
 		</td>
 		<td>
-			When true, the survey will have some features that assume the survey is the only (or at least, the main) item on page. For instance, the listener to the scroll will be enabled in all the <code>body<body>, versus the default behavior that only handles scroll in the survey container.
+			When true, the survey will have some features that assume the survey is the only (or at least, the main) item on page. For instance, the listener to the scroll will be enabled in all the <code>body</code>, versus the default behavior that only handles scroll in the survey container.
 		</td>
 	</tr>
 	<tr>
