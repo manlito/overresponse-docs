@@ -1,6 +1,6 @@
 
 <div class="jumbotron">
-	<h1>OverReponse DOCS</h1>
+	<h1>OverResponse DOCS</h1>
 	<p class="lead">
 		Want to know how to implement OverResponse in your site? This is 
 		the place to get started.
@@ -8,6 +8,10 @@
 </div>
 
 [title: Overresponse Documentation]: /
+
+<div class="alert alert-warning">
+	This documentation is still under development.
+</div>
 
 # Survey Configuration
 
@@ -70,6 +74,17 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 	</tr>
 	<tr>
 		<td>
+			expandable
+		</td>
+		<td>	
+			<code>true</code> or <code>false</code>
+		</td>
+		<td>
+			When true, after the user answers the first item, the survey will set to the height specified in height parameter.
+		</td>
+	</tr>
+	<tr>
+		<td>
 			alwaysShow
 		</td>
 		<td>	
@@ -79,7 +94,102 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			By default, if users starts filling a survey, they will not be able to see the same survey again (unless cookies are cleared). Use this flag to force the display of a survey.
 		</td>
 	</tr>
-
+	<tr>
+		<td>
+			showDelay
+		</td>
+		<td>	
+			Number of milliseconds
+		</td>
+		<td>
+			If desired, a fixed delay for the survey can be specified. This delay starts after the respondant.js file has been loaded.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			autoHide
+		</td>
+		<td>	
+			<code>true</code> or <code>false</code>
+		</td>
+		<td>
+			When using the default behavior, this setting will make the survey container to disappear after the user finishes the survey.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			fullScreen
+		</td>
+		<td>	
+			<code>true</code> or <code>false</code>
+		</td>
+		<td>
+			When true, the survey will have some features that assume the survey is the only (or at least, the main) item on page. For instance, the listener to the scroll will be enabled in all the <code>body<body>, versus the default behavior that only handles scroll in the survey container.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			template
+		</td>
+		<td>	
+			Object name from array of templates
+		</td>
+		<td>
+			The template to use, from the templates array. If using OverResponse default templates, possible values are: <code>Slim</code>, <code>ButtonLess</code> and <code>Simple</code>.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			templates
+		</td>
+		<td>	
+			Object
+		</td>
+		<td>
+			Object composed of user templates. Each template only has one element. For instance, OverResponse default templates are defined as:
+			
+			<code>
+			{
+				Simple: {
+					html: ''
+						+ '<div class="ORSimpleContainer">'
+						+ '	<div class="ORLayoutLeft Rounded5px NonSelectable">&lsaquo;</div>'
+						+ '	<div class="ORLayoutCenter"></div>'
+						+ '	<div class="ORLayoutRight Rounded5px NonSelectable">&raquo;</div>'
+						+ '</div>'
+				},
+				ButtonLess: {
+					html: ''
+						+ '<div class="ORButtonLessContainer">'
+						+ '	<div class="ORLayoutCenter"></div>'
+						+ '</div>'
+				},
+				Slim: {
+					html: ''
+						+ '<div class="ORSlimContainer">'
+						+ '	<div class="ORLayoutCenter"></div>'
+						+ '	<div class="ORLayoutButtons">'
+						+ '  <div class="ORLayoutLeft Rounded5px NonSelectable">&lsaquo;</div>'
+						+ '  <div class="ORLayoutRight Rounded5px NonSelectable">&raquo;</div>'
+						+ '	</div>'
+						+ '</div>'
+				}
+			}
+			
+			</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			controlClass
+		</td>
+		<td>	
+			String with CSS class name
+		</td>
+		<td>
+			If provided, this class will be added to all form controls that are system controls (only textboxes and textareas at the moment). Please note that checkboxes and radio elements are rendered using images.
+		</td>
+	</tr>
 </table>
 
 # Events
