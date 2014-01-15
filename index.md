@@ -148,7 +148,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 		<td>
 			Object composed of user templates. Each template only has one element. For instance, OverResponse default templates are defined as:
 			
-			<code>
+			<pre>
 			{
 				Simple: {
 					html: ''
@@ -176,7 +176,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 				}
 			}
 			
-			</code>
+			</pre>
 		</td>
 	</tr>
 	<tr>
