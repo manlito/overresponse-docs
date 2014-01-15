@@ -150,32 +150,17 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			
 			<pre><code>
 {
-	Simple: {
-		html: &#39;&#39;
-			+ &#39;&lt;div class=&quot;ORSimpleContainer&quot;&gt;&#39;
-			+ &#39;	&lt;div class=&quot;ORLayoutLeft Rounded5px NonSelectable&quot;&gt;&amp;lsaquo;&lt;/div&gt;&#39;
-			+ &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
-			+ &#39;	&lt;div class=&quot;ORLayoutRight Rounded5px NonSelectable&quot;&gt;&amp;raquo;&lt;/div&gt;&#39;
-			+ &#39;&lt;/div&gt;&#39;
-	},
-	ButtonLess: {
-		html: &#39;&#39;
-			+ &#39;&lt;div class=&quot;ORButtonLessContainer&quot;&gt;&#39;
-			+ &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
-			+ &#39;&lt;/div&gt;&#39;
-	},
-	Slim: {
-		html: &#39;&#39;
-			+ &#39;&lt;div class=&quot;ORSlimContainer&quot;&gt;&#39;
-			+ &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
-			+ &#39;	&lt;div class=&quot;ORLayoutButtons&quot;&gt;&#39;
-			+ &#39;  &lt;div class=&quot;ORLayoutLeft Rounded5px NonSelectable&quot;&gt;&amp;lsaquo;&lt;/div&gt;&#39;
-			+ &#39;  &lt;div class=&quot;ORLayoutRight Rounded5px NonSelectable&quot;&gt;&amp;raquo;&lt;/div&gt;&#39;
-			+ &#39;	&lt;/div&gt;&#39;
-			+ &#39;&lt;/div&gt;&#39;
-	}
-}
-			
+ Slim: {
+  html: &#39;&#39;
+    + &#39;&lt;div class=&quot;ORSlimContainer&quot;&gt;&#39;
+    + &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
+    + &#39;	&lt;div class=&quot;ORLayoutButtons&quot;&gt;&#39;
+    + &#39;  &lt;div class=&quot;ORLayoutLeft Rounded5px NonSelectable&quot;&gt;&amp;lsaquo;&lt;/div&gt;&#39;
+    + &#39;  &lt;div class=&quot;ORLayoutRight Rounded5px NonSelectable&quot;&gt;&amp;raquo;&lt;/div&gt;&#39;
+    + &#39;	&lt;/div&gt;&#39;
+    + &#39;&lt;/div&gt;&#39;
+  }
+}			
 			</code></pre>
 		</td>
 	</tr>
