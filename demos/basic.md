@@ -17,26 +17,26 @@ by copying the code provided using the publish button:
     containerId: 'ORClientContainer'
   };
   var ORScript = document.createElement('script');
-  ORScript.async=1;
-  ORScript.src= '//overresponse.com/scripts/respondant/respondant.js';
-  document.getElementsByTagName('head')[0].appendChild(ORScript);}
+  ORScript.async = true;
+  ORScript.src = '//overresponse.com/scripts/respondant/respondant.js';
+  document.getElementsByTagName('head')[0].appendChild(ORScript);
 </script>
 
 </div>
 
 The uncompressed and simplified version of the code to generate this survey is:
 
-<pre><code>
-<div id="ORClientContainer"></div>
-<script>
+<code>
+&lt;div id=&quot;ORClientContainer&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
   var ORSettings = {
     surveyId: '51870fd5f6664b9314000011',
     containerId: 'ORClientContainer'
   };
   var ORScript = document.createElement('script');
-  ORScript.async=1;
-  ORScript.src= '//overresponse.com/scripts/respondant/respondant.js';
-  document.getElementsByTagName('head')[0].appendChild(ORScript);}
-</script>
+  ORScript.async = true;
+  ORScript.src = '//overresponse.com/scripts/respondant/respondant.js';
+  document.getElementsByTagName('head')[0].appendChild(ORScript);
+&lt;/script&gt;
 </code></pre>
 
