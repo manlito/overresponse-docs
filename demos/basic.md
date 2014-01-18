@@ -1,4 +1,4 @@
-title: Basic
+title: Basic Example
 menu-locgroup: hidden
 
 Basic Example
@@ -26,7 +26,7 @@ by copying the code provided using the publish button:
 
 The uncompressed and simplified version of the code to generate this survey is:
 
-<code>
+<code><pre>
 &lt;div id=&quot;ORClientContainer&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
   var ORSettings = {
@@ -38,5 +38,5 @@ The uncompressed and simplified version of the code to generate this survey is:
   ORScript.src = '//overresponse.com/scripts/respondant/respondant.js';
   document.getElementsByTagName('head')[0].appendChild(ORScript);
 &lt;/script&gt;
-</code></pre>
+</pre></code>
 
