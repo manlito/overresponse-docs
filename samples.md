@@ -8,8 +8,8 @@ It is worth to note that we DON'T use IFrames. In this way, you can have strong 
 Basic
 ------------
 
-[Simplest example](/demos/basic)
-
+[Simplest example](/demos/basic)/
+[Classic Survey Scrolling](/demos/classic-scrolling)/
 
 Advanced
 ------------
