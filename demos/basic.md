@@ -14,7 +14,8 @@ by copying the code provided using the publish button:
 <script>
   var ORSettings = {
     surveyId: '51870fd5f6664b9314000011',
-    containerId: 'ORClientContainer'
+    containerId: 'ORClientContainer',
+    alwaysShow: true
   };
   var ORScript = document.createElement('script');
   ORScript.async = true;
