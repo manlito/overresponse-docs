@@ -7,9 +7,6 @@ Basic Example
 This example shows the most basic implementation available, that is,
 by copying the code provided using the publish button:
 
-
-<div class="container">
-
 <div id="ORClientContainer"></div>
 <script>
   var ORSettings = {
@@ -22,8 +19,6 @@ by copying the code provided using the publish button:
   ORScript.src = '//overresponse.com/scripts/respondant/respondant.js';
   document.getElementsByTagName('head')[0].appendChild(ORScript);
 </script>
-
-</div>
 
 The uncompressed and simplified version of the code to generate this survey is:
 

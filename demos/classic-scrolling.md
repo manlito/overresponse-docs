@@ -6,9 +6,6 @@ Basic Example
 
 Suppose you want to serve a survey with so many text input fields. In this case, the use of automatic scrolling can be uncomfortable. But no worries yet, because you can get our sample survey as follows:
 
-
-<div class="container">
-
 <div id="ORClientContainer"></div>
 <script>
   var ORSettings = {
@@ -22,8 +19,6 @@ Suppose you want to serve a survey with so many text input fields. In this case,
   ORScript.src = '//overresponse.com/scripts/respondant/respondant.js';
   document.getElementsByTagName('head')[0].appendChild(ORScript);
 </script>
-
-</div>
 
 You can get that result with the following code:
 
