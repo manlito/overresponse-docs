@@ -99,7 +99,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			showDelay
 		</td>
 		<td>	
-			<code>Int</code> (milliseconds)
+			<code>int</code> (milliseconds)
 		</td>
 		<td>
 			If desired, a fixed delay for the survey can be specified. This delay starts after the respondant.js file has been loaded.
