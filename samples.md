@@ -12,3 +12,4 @@ Basic
 Advanced
 ------------
 
+- [Simplest example](/demos/basic)
