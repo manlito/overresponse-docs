@@ -7,7 +7,7 @@
 	</p>
 </div>
 
-[title: Overresponse Documentation]: /
+[title: Developers @ OverResponse]: /
 
 <div class="alert alert-warning">
 	This documentation is still under development.
