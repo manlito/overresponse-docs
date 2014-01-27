@@ -139,7 +139,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 		</td>
 	</tr>
 	<tr>
-		<td><a name="templates" />
+		<td><a name="templates"></a>
 			templates
 		</td>
 		<td>	
