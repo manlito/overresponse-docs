@@ -139,7 +139,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td><a name="templates" />
 			templates
 		</td>
 		<td>	
@@ -150,17 +150,21 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			
 			<pre><code>
 {
- Slim: {
-  html: &#39;&#39;
-    + &#39;&lt;div class=&quot;ORSlimContainer&quot;&gt;&#39;
-    + &#39;	&lt;div class=&quot;ORLayoutCenter&quot;&gt;&lt;/div&gt;&#39;
-    + &#39;	&lt;div class=&quot;ORLayoutButtons&quot;&gt;&#39;
-    + &#39;  &lt;div class=&quot;ORLayoutLeft&quot;&gt;&amp;lsaquo;&lt;/div&gt;&#39;
-    + &#39;  &lt;div class=&quot;ORLayoutRight&quot;&gt;&amp;raquo;&lt;/div&gt;&#39;
-    + &#39;	&lt;/div&gt;&#39;
-    + &#39;&lt;/div&gt;&#39;
+  Slim: {
+    html: ''
+    + '&lt;div class=&quot;ORSlimContainer&quot;&gt;'
+    + '	 &lt;div class=&quot;ORLayoutCenter&quot;&gt;'
+    + '	   &lt;div class=&quot;ORSurveyContent&quot;&gt;&lt;/div&gt;'
+    + '	 &lt;/div&gt;'
+    + '	 &lt;div class=&quot;ORLayoutButtons&quot;&gt;'
+    + '	   &lt;div class=&quot;ORLayoutButtonRow&quot;&gt;'
+    + '      &lt;div class=&quot;ORLayoutLeft ORLeft Rounded5px NonSelectable&quot;&gt;&amp;lsaquo;&lt;/div&gt;'
+    + '      &lt;div class=&quot;ORLayoutRight ORRight Rounded5px NonSelectable&quot;&gt;&amp;raquo;&lt;/div&gt;'
+    + '	   &lt;/div&gt;'
+    + '	 &lt;/div&gt;'
+    + '&lt;/div&gt;'
   }
-}			
+}
 			</code></pre>
 		</td>
 	</tr>
