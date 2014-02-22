@@ -135,7 +135,7 @@ By default, OverResponse requires a global variable called `ORSettings` with fol
 			<code>true</code> or <code>false</code>
 		</td>
 		<td>
-			When true, survey will not capture mouse scroll unless the survey be activated by the user. When the flag is not set, default value will depend on <code>fullScreen</code> setting: if <code>fullScreen</code> is true, the this flag will default to false, and viceversa.
+			When true, survey will not capture mouse scroll unless the survey is activated by the user. When the flag is not set, default value will depend on <code>fullScreen</code> setting: if <code>fullScreen</code> is true, the this flag will default to false, and viceversa.
 		</td>
 	</tr>
 	<tr>
