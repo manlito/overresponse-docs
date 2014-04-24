@@ -9,7 +9,8 @@ going on with the survey. For instance, you could call your own API when
 the user completes the survey. 
 
 Next example shows how you can do this by sending callbacks
-along the `ORSettings` object:
+along the `ORSettings` object (click answers to view how the logger below
+the survey updates):
 
 <div id="ORClientContainer"></div>
 <script>
@@ -45,36 +46,34 @@ along the `ORSettings` object:
 
 And the result from the events:
 
-<pre>
-  <div id="LoggerExample"><div class="label label-default">Logger</div></div>
-</pre>
+<pre><div id="LoggerExample"><div class="label label-default">Logger</div></div></pre>
 
 The code that is used to accomplish this is the following:
 
 <code><pre>&lt;div id=&quot;ORClientContainer&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 
-  function appendContentToLogger(content) {
+  function appendContentToLogger(content) &#123;
     // Be aware your user could send anything... it is unprocessed, unescaped and unencoded
     $('#LoggerExample').append('&lt;div&gt;- ' + content + '&lt;/div&gt;');
   }
 
-  var ORSettings = {
+  var ORSettings = &#123;
     surveyId: '51870fd5f6664b9314000011',
     containerId: 'ORClientContainer',
     alwaysShow: true,
-    events: {
-      onFirstItemChange: function(event) {
+    events: &#123;
+      onFirstItemChange: function(event) &#123;
         appendContentToLogger('First item was answered with ' + event.response.value);
-      },
-      onItemChange: function(event) {
+      &#125;,
+      onItemChange: function(event) &#123;
         appendContentToLogger('An item was answered with ' + event.response.value);
-      },
-      onSurveyFinish: function(event) {
+      &#125;,
+      onSurveyFinish: function(event) &#123;
         appendContentToLogger('Survey was finished');
-      }
-    }
-  };
+      &#125;
+    &#125;
+  &#125;;
 
   var ORScript = document.createElement('script');
   ORScript.async = true;
