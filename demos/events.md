@@ -55,10 +55,12 @@ The code that is used to accomplish this is the following:
 <pre><code>
 &lt;div id=&quot;ORClientContainer&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
+
 function appendContentToLogger(content) {
   // Be aware your user could send anything... it is unprocessed, unescaped and unencoded
   $('#LoggerExample').append('&lt;div&gt;- ' + content + '&lt;/div&gt;');
 }
+
 var ORSettings = {
   surveyId: '51870fd5f6664b9314000011',
   containerId: 'ORClientContainer',
@@ -80,6 +82,7 @@ var ORScript = document.createElement('script');
 ORScript.async = true;
 ORScript.src = '//overresponse.com/scripts/respondant/respondant.js';
 document.getElementsByTagName('head')[0].appendChild(ORScript);
+
 &lt;/script&gt;
 </code></pre>
 

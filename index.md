@@ -264,7 +264,7 @@ Event handlers are also assigned using the  `ORSettings` object.
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td><a name="onSurveyFinish"></a>
 			onSurveyFinish
 		</td>
 		<td>	
