@@ -263,6 +263,17 @@ Event handlers are also assigned using the  `ORSettings` object.
 			The event is fires always the user submits a new response, or if a new value is sumitted.
 		</td>
 	</tr>
+	<tr>
+		<td>
+			onSurveyFinish
+		</td>
+		<td>	
+			User reaches the end of the survey
+		</td>
+		<td>
+			It will fire everytime the user is presented with the closing message of the survey. If the user returns to a previous item, and then again returns to the closing message, the callback will fire again.
+		</td>
+	</tr>
 </table>
 
 All event handlers receive an object with the event data. This object contains the following objects:

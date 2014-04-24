@@ -46,41 +46,43 @@ the survey updates):
 
 And the result from the events:
 
-<pre><div id="LoggerExample"><div class="label label-default">Logger</div></div></pre>
+<pre>
+  <div id="LoggerExample"><div class="label label-default">Logger</div></div>
+</pre>
 
 The code that is used to accomplish this is the following:
 
-<code><pre>&lt;div id=&quot;ORClientContainer&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div id=&quot;ORClientContainer&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 
-  function appendContentToLogger(content) &#123;
+  function appendContentToLogger(content) {
     // Be aware your user could send anything... it is unprocessed, unescaped and unencoded
     $('#LoggerExample').append('&lt;div&gt;- ' + content + '&lt;/div&gt;');
   }
 
-  var ORSettings = &#123;
+  var ORSettings = {
     surveyId: '51870fd5f6664b9314000011',
     containerId: 'ORClientContainer',
     alwaysShow: true,
-    events: &#123;
-      onFirstItemChange: function(event) &#123;
+    events: {
+      onFirstItemChange: function(event) {
         appendContentToLogger('First item was answered with ' + event.response.value);
-      &#125;,
-      onItemChange: function(event) &#123;
+      },
+      onItemChange: function(event) {
         appendContentToLogger('An item was answered with ' + event.response.value);
-      &#125;,
-      onSurveyFinish: function(event) &#123;
+      },
+      onSurveyFinish: function(event) {
         appendContentToLogger('Survey was finished');
-      &#125;
-    &#125;
-  &#125;;
+      }
+    }
+  };
 
   var ORScript = document.createElement('script');
   ORScript.async = true;
   ORScript.src = '//overresponse.com/scripts/respondant/respondant.js';
   document.getElementsByTagName('head')[0].appendChild(ORScript);
 
-&lt;/script&gt;</pre></code>
+&lt;/script&gt;</code></pre>
 
 As the note in the code indicates, there is no processing on the what the user submits
 to an item. So, if you plan to send the data to your server, please make sure you clean it.
