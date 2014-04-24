@@ -7,9 +7,9 @@ Basic
 ------------
 
 - [Simplest example](/demos/basic)
-- [Classic Survey Scrolling](/demos/classic-scrolling)
+- [Classic survey scrolling](/demos/classic-scrolling)
 
 Advanced
 ------------
 
-Soon...
+- [Survey events](/demos/events)

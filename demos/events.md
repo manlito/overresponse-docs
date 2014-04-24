@@ -16,7 +16,7 @@ along the `ORSettings` object:
 
   function appendContentToLogger(content) {
     // Be aware your user could send anything... it is unprocessed, unescaped and unencoded
-    $('#LoggerExample').append(content + '<br />');
+    $('#LoggerExample').append('<div>' + content + '</div>');
   }
 
   var ORSettings = {
@@ -40,7 +40,7 @@ along the `ORSettings` object:
   document.getElementsByTagName('head')[0].appendChild(ORScript);
 
 </script>
-<div id="LoggerExample"></div>
+<div id="LoggerExample" class=""><div class="label label-default">Logger</div></div>
 
 As the note in the code indicates, there is no processing on the what the user submits
 to an item. So, if you plan to send the data to your server, please make sure you clean it.
