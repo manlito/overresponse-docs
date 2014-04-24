@@ -23,14 +23,16 @@ along the `ORSettings` object:
     surveyId: '51870fd5f6664b9314000011',
     containerId: 'ORClientContainer',
     alwaysShow: true,
-    onFirstItemChange: function(event) {
-      appendContentToLogger('First item was answered with ' + event.response.value);
-    },
-    onItemChange: function(event) {
-      appendContentToLogger('An item was answered with ' + event.response.value);
-    },
-    onSurveyFinish: function(event) {
-      appendContentToLogger('Survey was finished');
+    events: {
+      onFirstItemChange: function(event) {
+        appendContentToLogger('First item was answered with ' + event.response.value);
+      },
+      onItemChange: function(event) {
+        appendContentToLogger('An item was answered with ' + event.response.value);
+      },
+      onSurveyFinish: function(event) {
+        appendContentToLogger('Survey was finished');
+      }
     }
   };
 
